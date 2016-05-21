@@ -3,23 +3,27 @@
 #sliderFrame, #sliderFrame div {
     box-sizing: content-box;
 }
+
 #sliderFrame
 {
-    width:700px;
+    width:920px;
     margin:0 auto; /*center-aligned*/
+    padding:20px;
+    box-shadow: 0 0 5px #BBB;
+    border:1px solid #CCC;
+    background-color:#FFF;
 }
 
 #slider, #slider .sliderInner {
-    width:700px;height:306px;/* Must be the same size as the slider images */
-    border-radius:3px;
+    width:680px;height:306px;/* Must be the same size as the slider images */
+    border-radius:0px;
 }
 
 #slider {
     background-color:white;
+    float:left;
     position:relative;
-    margin:0 auto; /*center-aligned*/
     transform: translate3d(0,0,0);
-    box-shadow: 0px 1px 5px #999999;
 }
 
 /* the link style (if an image is wrapped by a link) */
@@ -37,47 +41,28 @@
 /* Caption styles */
 #slider .mc-caption {
     position:absolute;
-    width:100%;
+    width:400px;
     height:auto;
-    padding:10px 0;/* 10px will increase the height.*/
-    left:0px;
-    bottom:0px;top:auto;
+    padding:10px 0;/* 10px will increase height.*/
+    left:120px;
+    bottom:10px;
     overflow:hidden;
-    font: bold 14px/20px Arial;
-    color:#EEE;
+    font:bold 13px/16px Arial;
+    color:#069;
     text-align:center;
-    background:rgba(0,0,0,0.3);
+    background:rgba(255,255,255,0.2);
+    border:1px solid rgba(255,255,255,0.3);
+    border-radius: 5px;
 }
 #slider .mc-caption a {
-    color:#FB0;
-}
-#slider .mc-caption a:hover {
-    color:#DA0;
+    color:#060;
 }
 
 
 /* ------ built-in navigation bullets wrapper ------*/
 #slider .navBulletsWrapper  {
-    top:320px;
-    text-align:center;
-    background:none;
-    position:relative;
-    z-index:3;
+    display:none;
 }
-
-/* each bullet */
-#slider .navBulletsWrapper div
-{
-    width:11px; height:11px;
-    font-size:0;color:White;/*hide the index number in the bullet element*/
-    background:transparent url(bullet.png) no-repeat 0 0;
-    display:inline-block; *display:inline; zoom:1;
-    overflow:hidden;cursor:pointer;
-    margin:0 6px;/* set distance between each bullet*/
-}
-
-#slider .navBulletsWrapper .active {background-position:0 -11px;}
-
 
 /* --------- Others ------- */
 
@@ -92,3 +77,38 @@
 
 #slider>a, #slider video, #slider audio {display:none;}
 #slider div {-webkit-transform: translate3d(0,0,0);transform: translate3d(0,0,0);}
+
+
+
+/* -- thumbnails -- */
+#thumbs
+{
+    float:left;
+    margin-left:10px;
+    width:230px;
+    font:normal 11px/13px Arial;
+    border-top:1px solid #CCC;
+    color:#666;
+}
+#thumbs .thumb
+{
+    border:1px solid #CCC;
+    border-top:1px solid #FFF;
+    padding:11px 8px;
+    background:#EEE;
+    cursor:pointer;
+}
+#thumbs .thumb-on
+{
+    background:#FFF;
+}
+
+#thumbs img{border:1px solid #DDD; cursor:pointer; width:70px; height:44px;}
+
+#thumbs .frame {float:left;padding:2px;border:1px solid #CCC;background:white;border-radius:3px;box-shadow:0 0 3px #BBB;font-size:0;line-height:0;}
+#thumbs .thumb-content {float:left;width:110px;padding-left:18px;}
+
+/* Captions in #thumbs .thumb-content */
+#thumbs .thumb-content p {font-weight:bold; color:#BF5D9B; margin:0 0 3px;padding:0;}
+#thumbs .thumb-on .thumb-content p {color:#BB0000;}
+
