@@ -1,7 +1,7 @@
 /* ------------menu-------------*/
 
 .menu {
-    background-color: #7B14AA;
+    background-color: white;
     align-content: right;
     text-align: right;
     height: 2em;
@@ -12,11 +12,16 @@
     text-shadow: 4px 3px 4px #333333;
     position: fixed;
     max-width: 1280;
+    margin-bottom: 0px;
 }
 
 .logo {
     background-color: coral;
     position: fixed;
+}
+
+.hr {
+    height: 2px;
 }
 
 
