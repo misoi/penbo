@@ -1,19 +1,17 @@
-/* ------------menu-------------*/
-
-.menu {
-    background-color: white;
-    align-content: right;
-    text-align: right;
-    height: 2em;
-    font-size: 35px;
-    font-family: Tahoma, Geneva, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    text-shadow: 4px 3px 4px #333333;
+.row1 {
+    background-image: url(../img/qSsmUG2.png);
+    background-repeat: no-repeat;
     position: fixed;
-    max-width: 1280;
-    margin-bottom: 0px;
+    background-image: cover;
+    max-width: 1280px;
 }
+
+.red {
+    text-align: center;
+}
+
+
+/* ------------menu-------------*/
 
 .logo {
     background-color: coral;
@@ -26,20 +24,8 @@
 
 
 }
-.menu a {
-    text-decoration: none;
-    color: gold;
-    font-size: 18px;
-    padding: 8px 8px 8px 8px;
-    display: inline-block;
-}
-.menu li {
-    display: inline-block;
-    padding: 5px;
-    color: blue;
-}
 .heigh {
-    height: 110px;
+    height: 500px;
 }
 .about {
     background-color: #7B14AA;
@@ -419,7 +405,7 @@ xloading-bar
     transition: width 3s;
 }
 .cd-headline.loading-bar b {
-    top: .2em;
+    top: .1sem;
     opacity: 0;
     transition: opacity 0.3s;
 }
@@ -538,4 +524,8 @@ xscale
         transform: scale(0);
         opacity: 0;
     }
+}
+.imgrow {
+    height: 500px;
+    width: 800px;
 }

@@ -16,106 +16,107 @@
     <link href='    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
 //fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
-
+    <link rel="stylesheet" href="css/css/component.css" type="text/css">
+    <link rel="stylesheet" href="css/css/demo.css" type="text/css">
+    <link rel="stylesheet" href="css/css/normalize.css" type="text/css">
     <script src="js/modernizr.custom.js"></script>
     <script src="js/modernizr.js"></script>
 
+    <script src="https://connect.soundcloud.com/sdk/sdk-3.1.1.js"></script>
+    <script>
+        SC.initialize({
+            client_id: 'b5ee447a0ce59acfab3b5c16057ef59b',
+            redirect_uri: 'http://example.com/callback'
+        });
 
+        // initiate auth popup
+        SC.connect().then(function () {
+                return SC.get('/me');
+            }).then(function (me) {
+                    alert('Hello, ' + me.username);
+                    SC.get("/tracks/75868018", {}, function (sound) {
+                        alert("Sound URI: " + sound.uri);
+                        $("#audio-test").attr("src", sound.uri);
+                    });
+    </script>
 </head>
 
 <body>
-    <div class="row">
-        <div class="large-12 columns menu">
-            <div class="large-3 columns">
-                <h3 class="slantfont">PENBO COMPANY</h3>
-            </div>
-            <div class="large-9 columns">
-                <div class="menu-section">
-                    <div class="menu-toggle">
-                        <div class="one"></div>
-                        <div class="two"></div>
-                        <div class="three"></div>
-                    </div>
-                    <nav>
-                        <ul role="navigation" class="hidden">
-                            <li><a href="#">work</a></li>
-                            <li><a href="#">about</a></li>
-                            <li><a href="#">resume</a></li>
-                            <li><a href="#">contact</a></li>
-                        </ul>
-                    </nav>
+    <div class="row ">
+        <div class="large-3 columns">
+            <img src="img/red_v3.png">
+        </div>
+        <div class="large-4 columns menu">
+            <section class="section section--menu" id="Cordelia">
+                <nav class="menu menu--cordelia">
+                    <ul class="menu__list">
+                        <li class="menu__item menu__item--current"><a href="#" class="menu__link">Home</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Portfolio</a></li>
+                        <li class="menu__item"><a href="#about" class="menu__link">About</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+                    </ul>
+                </nav>
+                <h1>Come make it your own
+            <br>by branding with us<br><br>for </h1>
+        </div>
+        <div class="large-5 columns red">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1>Based on</h1>
+            <br>
+            <img src="img/corporate-identity-design.jpg">
+        </div>
+
+        <div class="large-4 columns"><img src="img/personal-branding-business-cards-advertise-services-company-words-to-your-s-products-promote-you-as-expert-your-46153014.jpg">
+        </div>
+        <div class="large-2 columns"><img src="img/left-arrow-15.gif">
+        </div>
+        <div class="large-2 columns">
+            <img src="img/right-arrow-29.gif">
+        </div>
+        <div class="large-4 columns">
+            <img src="img/corporate-branding-smart.jpg">
+        </div>
+
+
+
+        <!--
+        <div class="large-12 columns cd-intro imgrow">
+            <div class="large-8 columns">
+                <div class="row">
+                    <section class="cd-intro">
+                        <h1 class="cd-headline rotate-1">
+    <span class="cd-words-wrapper">
+      <b class="is-visible"></b>
+      <b></b>
+      <b></b>
+        <b></b>
+        <b></b>
+    </span>
+  </h1>
+                    </section>
                 </div>
-                <!--
-                <ul>
-
-                    <li><a href="#home">Home</a>
-                    </li>
-                    <li><a href="#about">About</a></li>
-                    <li class="cd-intro-block"> <a href="port" data-action="show-projects"> portfolio</a>
-                    </li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li> <a href="book.html" data-action="show-projects"> Book</a></li>
-                </ul>
--->
-
             </div>
         </div>
+-->
+        <br>
+
+        <hr>
+        <!--    </section>-->
+
+
+
     </div>
 
     <div class="large-12 columns heigh"></div>
 
     <!--------------------------------------------------------    landing page with images sliding------------------------------------------------------------------- -->
-    <div class="row ab">
-        <div class="large-2 columns">
-            <br>
-        </div>
-        <div class="large-6 columns cd-intro ">
-            <div class="row">
-                <section class="cd-intro">
-                    <h1 class="cd-headline rotate-1">
-    <span class="cd-words-wrapper">
-      <b class="is-visible"><img src="img/17290869.jpg"></b>
-      <b><img src="img/book.jpg"></b>
-      <b><img src="img/9545718_orig.jpg"></b>
-    </span>
-  </h1>
-                </section>
 
-
-            </div>
-            <!--
-            <h1 class="cd-headline rotate-1 ">
-<span class="cd-words-wrapper">
-      <b class="is-visible"><img src="img/17290869.jpg"></b>
-      <b><img src="img/book.jpg"</b>
-      <b><img src="img/9545718_orig.jpg"</b>
-                       </span></h1>
--->
-        </div>
-        <br>
-
-        <!--
-    <section class="cd-intro">
-  <h1 class="cd-headline rotate-1">
-    <span>My favourite game is</span>
-    <span class="cd-words-wrapper">
-      <b class="is-visible">ninepins</b>
-      <b>bowling</b>
-      <b>skittles</b>
-    </span>
-  </h1>
-</section>
--->
-
-
-
-        <div class="large-4 columns">
-            <h3>Welcome to our service <br>We look forward to serving you! </h3>
-        </div>
-    </div>
-    <hr>
     <!-------------------------------------------------------    abot us page------------------------------------------------------------------- -->
-    <div class="row ab">
+    <div class="row ab" id="about">
         <div class="large-2 column">
             <br>
         </div>
@@ -301,6 +302,7 @@
             <i class="fi-envelope" aria-hidden="true"></i>
             <i class="fi-telephone large"></i>
             <label>Follow us on:</label>
+            <audio id="audio-test" controls></audio>
             <i class="fi-social-facebook large"></i>
 
             <br>
@@ -484,6 +486,43 @@
 
         });
     </script>
+    <!--=========================================== menu script================================================================================--->
+    <script>
+        (function () {
+			[].slice.call(document.querySelectorAll('.menu')).forEach(function (menu) {
+                var menuItems = menu.querySelectorAll('.menu__link'),
+                    setCurrent = function (ev) {
+                        //                        ev.preventDefault();
+
+                        var item = ev.target.parentNode; // li
+
+                        // return if already current
+                        if (classie.has(item, 'menu__item--current')) {
+                            return false;
+                        }
+                        // remove current
+                        classie.remove(menu.querySelector('.menu__item--current'), 'menu__item--current');
+                        // set current
+                        classie.add(item, 'menu__item--current');
+                    };
+
+				[].slice.call(menuItems).forEach(function (el) {
+                    el.addEventListener('click', setCurrent);
+                });
+            });
+
+			[].slice.call(document.querySelectorAll('.link-copy')).forEach(function (link) {
+                link.setAttribute('data-clipboard-text', location.protocol + '//' + location.host + location.pathname + '#' + link.parentNode.id);
+                new Clipboard(link);
+                link.addEventListener('click', function () {
+                    classie.add(link, 'link-copy--animate');
+                    setTimeout(function () {
+                        classie.remove(link, 'link-copy--animate');
+                    }, 300);
+                });
+            });
+        })(window);
+    </script>
     <!--                landing page js-->
     <script src="js/js/jquery-2.1.4.js"></script>
     <script src="js/js/jquery.mobile.custom.min.js"></script>
@@ -498,6 +537,9 @@
     <script src="js/app.js"></script>
     <script src="js/jquery.mobile.custom.min.js"></script>
     <script src="js/main2.js"></script>
+    <script src="js/classie2.js"></script>
+    <script src="js/clipboard.min.js"></script>
+    <script src="js/modernizr.custom5.js"></script>
 </body>
 
 </html>
