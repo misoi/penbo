@@ -1,13 +1,18 @@
 .row1 {
     background-image: url(../img/qSsmUG2.png);
     background-repeat: no-repeat;
-    position: fixed;
+    /*    position: fixed;*/
     background-image: cover;
     max-width: 1280px;
 }
 
 .red {
     text-align: center;
+    color: white;
+}
+
+.back {
+    background-color: #981414;
 }
 
 
@@ -25,7 +30,7 @@
 
 }
 .heigh {
-    height: 500px;
+    height: 900px;
 }
 .about {
     background-color: #7B14AA;
@@ -34,21 +39,21 @@
     font-size: 20px;
 }
 .col2 {
-    background-color: #600C87;
+    background-color: #981414;
     color: wheat;
     text-align: center;
     font-size: 20px;
     height: 80%;
 }
 .col3 {
-    background-color: #7E399E;
+    background-color: #E92F2F;
     color: wheat;
     text-align: center;
     font-size: 20px;
     height: 80%;
 }
 .col4 {
-    background-color: #8529B0;
+    background-color: #981414;
     color: wheat;
     text-align: center;
     font-size: 20px;
@@ -306,6 +311,8 @@ xrotate-1
 xrotate-2
 
 -------------------------------- */
+
+/*
 .cd-headline.rotate-2 .cd-words-wrapper {
     perspective: 300px;
 }
