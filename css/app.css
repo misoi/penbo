@@ -7,13 +7,14 @@
 }
 
 .red {
-    background-color: #473B3F;
+    background: #130A0A;
     padding: 5px;
     max-width: 1280px;
+    color: white;
 }
 
 .back {
-    background-color: #981414;
+    color: white;
 }
 
 
