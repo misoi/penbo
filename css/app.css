@@ -380,3 +380,77 @@ xscale
     height: 500px;
     width: 800px;
 }
+
+/*contact css*/
+.order-text {
+    font-family: Calibri;
+    color: #fff;
+    text-align: center;
+    font-size: 28px;
+    padding: 3% 0% 3% 0%;
+}
+.haeder {
+    background-color: #444444;
+    width: 70%;
+    margin: 0%
+}
+.text {
+    font-family: Calibri;
+    font-size: 100%;
+    margin: 25px 1px 1px 25px;
+    padding: 0px 0px 0px 0px;
+}
+.red {
+    color: red;
+}
+select {
+    margin: 0px;
+    padding: 0px;
+    size: 0px;
+    width: 80%;
+}
+.input-field {
+    border: 1px solid #ccc;
+    margin: 0% 0% 0% 4%;
+    padding: 1% 15% 1% 1%;
+    width: 80%;
+    background-image: linear-gradient(rgba(214, 214, 214, 1) -15px, rgba(255, 255, 255, 0.7) 50%);
+    ;
+}
+.aaa {
+    margin: 0px 400px 0px 0px;
+}
+.select-field {
+    border: 1px solid #ccc;
+    margin: 0% 0% 0% 4%;
+    padding: 1% 15% 1% 1%;
+    width: 80%;
+    background-image: linear-gradient(rgba(214, 214, 214, 1) -15px, rgba(255, 255, 255, 0.7) 50%);
+    ;
+}
+.number-field {
+    border: 1px solid #ccc;
+    margin: 0% 0% 0% 4%;
+    padding: 1% 15% 1% 1%;
+    width: 80%;
+    background-image: linear-gradient(rgba(214, 214, 214, 1) -15px, rgba(255, 255, 255, 0.7) 50%);
+    ;
+}
+.futer {
+    background-color: #444444;
+    width: 66%;
+    height: 56px;
+    margin-top: 4%;
+    padding-left: 4%;
+    padding-top: 3%;
+}
+.button {
+    font-family: Calibri;
+    font-sryle: bolt;
+    font-size: 90%;
+    border-radius: 3px;
+    width: 30%;
+    height: 30px;
+    background-color: aqua;
+    font-size: 20px;
+}

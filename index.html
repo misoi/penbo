@@ -234,97 +234,82 @@
     </div>
     <hr class="hr">
     <div class="row">
-        <div class="large-2 columns">
-            <br>
-        </div>
 
-        <div class="large-4 columns">
+        <div class="large-6 columns">
             <h2>Make an order with us </h2>
             <form>
                 <div class="row">
-                    <div class="small-3 columns">
-                        <label for="middle-label" class="text-right middle">Full name</label>
-                    </div>
-                    <div class="small-9 columns">
-                        <input type="text" id="middle-label" placeholder="enter your full name">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="small-3 columns">
-                        <label for="middle-label" class="text-right middle">Phone No:</label>
-                    </div>
-                    <div class="small-9 columns">
-                        <input type="text" id="middle-label" placeholder="+254">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="small-3 columns">
-                        <label for="middle-label" class="text-right middle">Email</label>
-                    </div>
-                    <div class="small-9 columns">
-                        <input type="text" id="middle-label" placeholder="enter valid email">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="small-3 columns">
-                        <label for="middle-label" class="text-right middle">Product description</label>
-                    </div>
-                    <div class="small-9 columns">
-                        <textarea type="textarea" id="middle-label" placeholder="message thet should be printed in your product"></textarea>
-                    </div>
-                    <div class="row">
-                        <div class="large-3 columns">
-                            <br>
-                        </div>
+                    <form action="#" method="GET" class="aaa" name="order-form">
 
-                        <div class="large-3 columns">
-                            <br>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="small-3 columns">
-                            <label for="middle-label" class="text-right middle">Product quantity</label>
-                        </div>
-                        <div class="small-9 columns">
-                            <input type="text" id="middle-label" placeholder="number of the products">
-                        </div>
+                        <div>
+                            <label>
+                                <p class="text">Name: <b class="red">*</b></p>
+                                <input type="text" class="input-field" name="name" required autofocus />
+                            </label>
 
-                    </div>
-                    <div class="small-9 columns">
-                        <input type="submit" value="submit" class="button submit " />
-                    </div>
-                    <fieldset class="large-6 columns">
+                            <label>
+                                <p class="text">E-mail: <b class="red">*</b></p>
+                                <input type="email" class="input-field" name="email" required/>
+                            </label>
 
-                        <input type="radio" name="gender" value="male" checked>Pens
-                        <br>
-                        <input type="radio" name="gender" value="female"> Books
-                        <br>
-                        <input type="radio" name="gender" value="other"> Pens and Bokks
-                    </fieldset>
+                            <label>
+                                <p class="text">Telephone/Contact</p>
+                                <input type="tel" class="input-field" name="telephon" required autofocus/>
+                            </label>
+
+
+                        </div>
+                        <div class="futer">
+                            <input type="submit" name="Отправить" class="button">
+                            <input type="reset" name="Сбросить" class="button">
+                        </div>
+                    </form>
                 </div>
-            </form>
+
         </div>
-
-        <div class="large-4 columns black">
-
-            <h4>Contact details</h4>
-            <i class="fi-envelope" aria-hidden="true"></i>
-            <i class="fi-telephone large"></i>
-            <label>Follow us on:</label>
-            <audio id="audio-test" controls></audio>
-            <i class="fi-social-facebook large"></i>
-
+        <div class="large-6 columns">
             <br>
-
-
             <br>
-            <i class="fa-envelope-o fa-2x" aria-hidden="true"></i>
-
             <br>
+            <label>
+                <p class="text">Brand category: <b class="red">*</b></p>
+                <select name="product-name" class="select-field">
+                    <option value="product1">Corporate branding</option>
+                    <option value="product2">Personal branding</option>
+                </select>
+            </label>
+
+            <label>
+                <p class="text">Quantity <b class="red">*</b></p>
+                <input type="number" min="1" name="psc" class="number-field" reqired>
+            </label>
+            <label>
+                <p class="text">Date: <b class="red">*</b></p>
+                <input type="date" min="2016-04-12" class="input-field" reqired>
+            </label>
         </div>
-        <div class="large-2 columns">
-            <br>
-        </div>
+    </div>
+
+    <div class="large-4 columns black">
+        <h4>Contact details</h4>
+        <i class="fi-envelope" aria-hidden="true"></i>
+        <i class="fi-telephone large"></i>
+        <label>Follow us on:</label>
+        <audio id="audio-test" controls></audio>
+        <i class="fi-social-facebook large"></i>
+
+        <br>
+
+
+        <br>
+        <i class="fa-envelope-o fa-2x" aria-hidden="true"></i>
+
+        <br>
+
+    </div>
+    <div class="large-2 columns">
+        <br>
+    </div>
     </div>
     <footer>
         <div class="row">
