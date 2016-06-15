@@ -45,7 +45,7 @@
     font-size: 20px;
     height: 80%;
 }
-.col3 {
+.colthree {
     color: black;
     text-align: center;
     font-size: 20px;
@@ -458,4 +458,21 @@ select {
 }
 .textt {
     color: white;
+}
+
+/*=======================================about us background image==========================================================*/
+.rowtwo {
+    background-image: url(../img/about.jpg);
+    background-repeat: no-repeat;
+    background-image: cover;
+    max-width: 1280px;
+    color: white;
+    font-size: 20px;
+}
+.overlay {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow-x: hidden;
+    color: white;
+    font-size: 22px;
 }
