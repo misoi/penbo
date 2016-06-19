@@ -6,6 +6,18 @@
     max-width: 1280px;
 }
 
+.menu2 {
+    position: fixed;
+    text-align: center;
+    align-content: center;
+    background-color: transparent;
+    height: 80px;
+}
+
+.line {
+    height: 150px;
+}
+
 .red {
     background: #130A0A;
     padding: 5px;
@@ -14,6 +26,7 @@
 }
 
 .back {
+    font-family: 'Poiret One', cursive;
     color: white;
 }
 
@@ -462,13 +475,15 @@ select {
 
 /*=======================================about us background image==========================================================*/
 .rowtwo {
-    background-image: url(../img/about.jpg);
+    background-image: url(../img/page4.jpg);
     background-repeat: no-repeat;
     background-image: cover;
     max-width: 1280px;
     color: white;
-    font-size: 20px;
+    font-size: 23px;
     font-family: 'Poiret One', cursive;
+    text-align: center;
+    margin: 9px;
 }
 .overlay {
     background-color: rgb(0, 0, 0);
@@ -476,4 +491,11 @@ select {
     overflow-x: hidden;
     color: white;
     font-size: 22px;
+}
+.port {
+    background-image: url(../img/about.jpg);
+    background: cover;
+    background-repeat: no-repeat;
+    max-width: 1280px;
+    margin: 9px;
 }
