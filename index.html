@@ -21,6 +21,13 @@
     <link rel="stylesheet" href="css/css/normalize.css" type="text/css">
     <script src="js/modernizr.custom.js"></script>
     <script src="js/modernizr.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="js/jquery.stellar.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(window).stellar();
+        });
+    </script>
 
     <script src="https://connect.soundcloud.com/sdk/sdk-3.1.1.js"></script>
     <script>
@@ -41,7 +48,7 @@
     </script>
 </head>
 
-<body class="row1">
+<body class="row1" data-stellar-background-ratio="0.5">
     <div class="row ">
 
         <div class="large-12 columns menu2 text-center">
@@ -55,7 +62,7 @@
                         <li class="menu__item"><a href="#about" class="menu__link">About</a></li>
                         <li class="menu__item"><a href="#portfolio" class="menu__link">Portfolio</a></li>
 
-                        <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link" data-open="exampleModal1" id="register-form">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -74,10 +81,11 @@
                     <br>
                 </div>
 
-                <h1 class="back">Come make it your own
-            <br>by branding with us<br>  <h1 class="back">We do both</h1>
-                <br>
-                <h2 class="back">personalbranding and corporates branding</h2> </h1>
+                <h1 class="back">Come <span class="span">make</span> it your own
+            <br>by <span class="span">branding</span> with us<br></h1>
+                <h1 class="we">We do both</h1>
+
+                <h2 class="we">personalbranding and corporates branding</h2>
             </div>
             <div class="large-2 columns">
                 <br>
@@ -97,7 +105,7 @@
 
 
     <!-------------------------------------------------------    abot us page------------------------------------------------------------------- -->
-    <div class="row rowtwo " id="about">
+    <div class="row rowtwo " data-stellar-background-ratio="0.5" id="about">
         <div class="row overlay">
             <div class="large-2 column">
                 <br>
@@ -142,16 +150,16 @@
         </div>
     </div>
     <!-- ----------------------------------------------------------------------------------------   our portfolio part----------------------------------------------------->
-    <div class="row port" id="portfolio">
-        <br>
-        <br>
-        <br>
+    <div class="row port" data-stellar-background-ratio="0.5" id="portfolio">
         <br>
         <br>
         <br>
         <div class="large-12 columns text-center">
             <h2 class="textt">OUR WORK</h2>
+            <br>
+            <br>
 
+            <br>
         </div>
         <div class="row">
             <!-- start single effect -->
@@ -179,17 +187,7 @@
                     </figcaption>
                 </figure>
             </div>
-            <!-- start single effect -->
-            <!--        <div class="large-3 columns single-effect">-->
-            <!--
-           <figure class="wpf-demo-1">
-    <a href="#"><img src="img/julia-baker-confections-chocolate-truffle-box-packaging-branding-company-design-03.jpg" width="100px" height="100px">
-    </a>
-    <figcaption class="view-caption">
-        <a href="#">View+</a>
-    </figcaption>
-</figure>
--->
+
             <!--       </div>-->
         </div>
 
@@ -205,16 +203,7 @@
                     </figcaption>
                 </figure>
             </div>
-            <!--
-        <div class="large-3 columns single-effect">
-    <figure class="wpf-demo-1">
-        <a href="#"><img src="img/EPSCollateral4.jpg" width="100px" height="100px"></a>
-        <figcaption class="view-caption">
-            <a href="#">View+</a>
-        </figcaption>
-    </figure>
-</div>
--->
+
             <div class="large-4 columns single-effect">
                 <figure class="wpf-demo-1">
                     <a href="#"><img src="img/the-mountain-company-logo.gif" width="100px" height="100px"></a>
@@ -238,95 +227,43 @@
         </div>
     </div>
 
-    <!-- start single effect -->
 
-
-    <!-- start single effect -->
     </div>
     <hr class="hr">
-    <div class="row ">
-        <div class="large-12 columns text-center">
-            <h2 class="textt">Make an order with us </h2>
-        </div>
-        <div class="large-2 columns">
-            <br>
-        </div>
-        <div class="large-8 columns">
 
-            <form>
-                <div class="row">
-                    <form action="#" method="GET" class="aaa" name="order-form">
+    <div class="reveal modal  gray " id="exampleModal1" data-reveal>
 
-                        <div text-center>
-                            <label>
-                                <p class="text">Name: <b class="red">*</b></p>
-                                <input type="text" class="input-field" name="name" required autofocus />
-                            </label>
-
-                            <label>
-                                <p class="text">E-mail: <b class="red">*</b></p>
-                                <input type="email" class="input-field" name="email" required/>
-                            </label>
-
-                            <label>
-                                <p class="text">Telephone/Contact <b class="red">*</b></p>
-                                <input type="tel" class="input-field" name="telephon" required autofocus/>
-                            </label>
-
-                            <label>
-                                <p class="text">Brand category: <b class="red">*</b></p>
-                                <select name="product-name" class="select-field">
-                                    <option value="product1">Corporate branding</option>
-                                    <option value="product2">Personal branding</option>
-                                </select>
-                            </label>
-
-                            <label>
-                                <p class="text">Quantity <b class="red">*</b></p>
-                                <input type="number" min="1" name="psc" class="number-field" reqired>
-                            </label>
-                            <label>
-                                <p class="text">Date: <b class="red">*</b></p>
-                                <input type="date" min="2016-04-12" class="input-field" reqired>
-                            </label>
-                            <label>
-                                <p class="text">Product description: <b class="red">*</b></p>
-                                <textarea class="input-field" required autofocus></textarea>
-
-                            </label>
-                            <input type="submit" class="button">
-                            <input type="reset" class="button">
-                        </div>
-                    </form>
+        <form action="" class="aaa" name="contact" method="post">
+            <div class="small-12 large-12 columns">
+                <div text-center>
+                    <input type="text" name="name" class="input-field" required/>
+                    <br>
+                    <input type="email" class="input-field" name="email" required/>
+                    <br>
+                    <input type="tel" class="input-field" name="telephon" required autofocus/>
+                    <br>
+                    <select name="product-name" class="select-field">
+                        <option value="product1">Corporate branding</option>
+                        <option value="product2">Personal branding</option>
+                    </select>
+                    <br>
+                    <br>
+                    <input type="number" min="1" name="psc" class="number-field" reqired>
+                    <br>
+                    <input type="date" min="2016-04-12" class="input-field" reqired>
+                    <br>
+                    <textarea class="input-field" required autofocus></textarea>
+                    <br>
+                    <input type="submit" class="button">
+                    <input type="reset" class="button">
+                    <button class="close-button" data-close aria-label="Close modal" type="button">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-
-        </div>
-        <div class="large- columns">
-
-
-            <br>
-            <br>
-        </div>
+            </div>
+        </form>
     </div>
 
-    <div class="large-4 columns black">
-        <h4>Contact details</h4>
-        <i class="fi-envelope" aria-hidden="true"></i>
-        <i class="fi-telephone large"></i>
-        <label>Follow us on:</label>
-        <audio id="audio-test" controls></audio>
-        <i class="fi-social-facebook large"></i>
-
-        <br>
-
-
-        <br>
-        <i class="fa-envelope-o fa-2x" aria-hidden="true"></i>
-
-
-        <br>
-
-    </div>
     <div class="large-2 columns">
         <br>
     </div>
