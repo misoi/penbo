@@ -1,7 +1,8 @@
 .row1 {
-    background-image: url(../img/qSsmUG2.png);
+    background-image: url(../img/brandin/2.jpg);
     background-repeat: no-repeat;
-    /*    background-attachment: fixed;*/
+    max-width: 100%;
+    background-attachment: fixed;
 }
 
 .menu2 {
@@ -102,7 +103,6 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: #fff;
-    background-color: #E10E49;
 }
 .cd-title {
     position: relative;
@@ -422,7 +422,7 @@ select {
     border: 1px solid #ccc;
     margin: 0% 0% 0% 4%;
     padding: 1% 15% 1% 1%;
-    width: 100%;
+    width: 90%;
     background-image: linear-gradient(rgba(214, 214, 214, 1) -15px, rgba(255, 255, 255, 0.7) 50%);
     ;
 }
@@ -493,7 +493,7 @@ select {
     font-size: 22px;
 }
 .port {
-    background-image: url(../img/about.jpg);
+    background-image: url(../img/brandin/6.jpg);
     background: cover;
     background-repeat: no-repeat;
     max-width: 1280px;
