@@ -10,7 +10,7 @@
     text-align: center;
     align-content: center;
     background-color: transparent;
-    height: 80px;
+    height: 60px;
 }
 
 .line {
@@ -506,4 +506,21 @@ select {
 }
 .span {
     color: #CF4C58;
+}
+
+/*contact part*/
+.cont {
+    background-image: url(../img/brandin/9.jpg);
+    background: cover;
+    background-repeat: no-repeat;
+    max-width: 1280px;
+    margin: 9px;
+    background-attachment: fixed;
+}
+.social {
+    color: #1CA8EC;
+    padding: 3px;
+}
+.mes {
+    color: white;
 }

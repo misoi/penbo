@@ -182,7 +182,7 @@ footer {
     .navbar-default {
         border-color: transparent;
         background-color: transparent;
-        min-height: 60px;
+        min-height: 50px;
     }
     .navbar-header > .navbar-brand {
         color: #ff4d88;
